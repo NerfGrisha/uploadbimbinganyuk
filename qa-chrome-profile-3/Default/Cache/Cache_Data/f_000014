@@ -1,0 +1,462 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/landing/Program.tsx");import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;
+
+let prevRefreshReg;
+let prevRefreshSig;
+
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react-swc can't detect preamble. Something is wrong."
+    );
+  }
+
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=c94b15b7"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import { ClipboardCheck, FileCheck2, FileEdit, Headphones, Map, MessageSquareText, Presentation, Search } from "/node_modules/.vite/deps/lucide-react.js?v=c94b15b7";
+import gradImg from "/src/assets/graduation-optimized.jpg?import";
+const steps = [
+    {
+        icon: Search,
+        title: "1. Diagnosis kondisi",
+        desc: "Ceritakan posisi skripsimu: topik, bab, revisi, deadline, dan kendala dosen."
+    },
+    {
+        icon: Map,
+        title: "2. Roadmap personal",
+        desc: "Kami susun urutan kerja yang realistis, dari revisi paling penting sampai target sidang."
+    },
+    {
+        icon: FileEdit,
+        title: "3. Review dan mentoring",
+        desc: "Kamu bawa progress, mentor bantu bedah struktur, argumen, metode, dan next action."
+    },
+    {
+        icon: ClipboardCheck,
+        title: "4. Accountability",
+        desc: "Progress dipantau agar kamu tidak hilang arah, menunda, atau kembali stuck sendirian."
+    }
+];
+const deliverables = [
+    "Audit naskah dan revisi dosen",
+    "Roadmap pengerjaan skripsi",
+    "Sesi mentoring private",
+    "Feedback struktur dan metodologi",
+    "Monitoring progress mingguan",
+    "Persiapan konsultasi dosen",
+    "Simulasi sidang dan Q&A",
+    "Support WhatsApp sesuai paket"
+];
+const roadmapPreview = [
+    [
+        "Hari 1-3",
+        "Audit revisi dan kondisi naskah"
+    ],
+    [
+        "Hari 4-10",
+        "Prioritas bab dan target revisi pertama"
+    ],
+    [
+        "Minggu 2-4",
+        "Review struktur, metode, dan argumen utama"
+    ],
+    [
+        "Menjelang sidang",
+        "Latihan menjawab pertanyaan dosen"
+    ]
+];
+export const Program = ()=>/*#__PURE__*/ _jsxDEV("section", {
+        id: "program",
+        className: "section-shell bg-soft",
+        children: /*#__PURE__*/ _jsxDEV("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ _jsxDEV("div", {
+                    className: "grid gap-5 sm:gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end",
+                    children: [
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("p", {
+                                    className: "section-eyebrow",
+                                    children: "Sistem pendampingan"
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 59,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("h2", {
+                                    className: "mt-3 text-[2rem] font-extrabold leading-tight tracking-tight sm:mt-4 sm:text-4xl md:text-5xl",
+                                    children: "Program Wisuda 90 Hari yang bikin skripsi terasa punya jalur."
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 58,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("p", {
+                            className: "text-[15px] font-medium leading-7 text-foreground/75 md:text-lg md:leading-8",
+                            children: "Fokusnya bukan janji instan. Fokusnya membuat kamu tahu apa yang harus dikerjakan, kenapa itu penting, dan bagaimana menyampaikannya dengan percaya diri ke dosen pembimbing."
+                        }, void 0, false, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 66,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                    lineNumber: 57,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ _jsxDEV("div", {
+                    className: "mt-10 grid gap-5 sm:mt-14 sm:gap-8 lg:grid-cols-[1fr_420px]",
+                    children: [
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "grid gap-3 sm:gap-4 md:grid-cols-2",
+                            children: steps.map(({ icon: Icon, title, desc })=>/*#__PURE__*/ _jsxDEV("div", {
+                                    className: "premium-card p-5 sm:p-6",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("span", {
+                                            className: "grid h-12 w-12 place-items-center rounded-2xl bg-primary-deep text-gold",
+                                            children: /*#__PURE__*/ _jsxDEV(Icon, {
+                                                className: "h-5 w-5"
+                                            }, void 0, false, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                                lineNumber: 78,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 77,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                            className: "mt-4 text-lg font-extrabold tracking-tight sm:mt-5 sm:text-xl",
+                                            children: title
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 80,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "mt-3 text-sm leading-7 text-foreground/75",
+                                            children: desc
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 81,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, title, true, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 76,
+                                    columnNumber: 13
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 74,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "relative overflow-hidden rounded-2xl bg-primary-deep text-white shadow-2xl",
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("img", {
+                                    src: gradImg,
+                                    alt: "Mahasiswa merayakan kelulusan setelah menyelesaikan skripsi",
+                                    loading: "lazy",
+                                    decoding: "async",
+                                    width: 720,
+                                    height: 860,
+                                    className: "h-72 w-full object-cover sm:h-80 lg:h-full"
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 87,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "absolute inset-0 bg-gradient-to-t from-primary-deep via-primary-deep/55 to-transparent"
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 96,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "absolute inset-x-0 bottom-0 p-5 sm:p-6 md:p-8",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "inline-flex items-center gap-2 rounded-full bg-white/14 px-3 py-1.5 text-xs font-bold text-gold backdrop-blur",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDEV(Presentation, {
+                                                    className: "h-4 w-4"
+                                                }, void 0, false, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                                    lineNumber: 99,
+                                                    columnNumber: 15
+                                                }, this),
+                                                "Target akhir: siap sidang"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 98,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                            className: "mt-4 text-[1.55rem] font-extrabold leading-tight sm:text-3xl",
+                                            children: "Bukan cuma selesai nulis. Kamu juga siap menjelaskan penelitianmu."
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 97,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 86,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                    lineNumber: 73,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ _jsxDEV("div", {
+                    className: "mt-6 rounded-2xl border border-border bg-white p-5 shadow-card sm:mt-8 sm:p-6 md:p-8",
+                    children: [
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "flex flex-col gap-5 md:flex-row md:items-center md:justify-between",
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "section-eyebrow",
+                                            children: "Yang kamu dapatkan"
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 112,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                            className: "mt-2 text-[1.45rem] font-extrabold leading-tight tracking-tight sm:text-2xl",
+                                            children: "Paket bimbingan yang terasa lengkap, bukan tambal sulam."
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 115,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 111,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("a", {
+                                    href: "#paket",
+                                    className: "premium-button inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-primary-deep px-5 py-3 text-sm font-bold text-white transition hover:bg-primary sm:w-auto",
+                                    children: [
+                                        "Bandingkan Paket",
+                                        /*#__PURE__*/ _jsxDEV(MessageSquareText, {
+                                            className: "h-4 w-4"
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 124,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 119,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 110,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "mt-6 grid gap-2.5 sm:mt-7 sm:grid-cols-2 sm:gap-3 lg:grid-cols-4",
+                            children: deliverables.map((item)=>/*#__PURE__*/ _jsxDEV("div", {
+                                    className: "rounded-xl bg-soft px-4 py-3 text-sm font-semibold text-foreground/90 ring-1 ring-border/60",
+                                    children: item
+                                }, item, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 129,
+                                    columnNumber: 13
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 127,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "mt-5 flex items-start gap-3 rounded-2xl bg-gold-soft p-4 text-sm leading-7 text-foreground/80 ring-1 ring-gold/20",
+                            children: [
+                                /*#__PURE__*/ _jsxDEV(Headphones, {
+                                    className: "mt-1 h-5 w-5 shrink-0 text-gold"
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 135,
+                                    columnNumber: 11
+                                }, this),
+                                "Konsultasi awal gratis dipakai untuk membaca kondisi dan merekomendasikan paket yang paling masuk akal untukmu."
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 134,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                    lineNumber: 109,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ _jsxDEV("div", {
+                    className: "mt-6 grid gap-4 rounded-2xl border border-border bg-white p-5 shadow-card sm:mt-8 sm:p-6 lg:grid-cols-[0.85fr_1.15fr] lg:p-8",
+                    children: [
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("p", {
+                                    className: "section-eyebrow",
+                                    children: "Contoh deliverable"
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 143,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("h3", {
+                                    className: "mt-2 text-[1.45rem] font-extrabold leading-tight tracking-tight sm:text-2xl",
+                                    children: "Kamu tidak pulang dari sesi hanya dengan motivasi. Kamu pulang dengan peta kerja."
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 144,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("p", {
+                                    className: "mt-4 text-sm font-medium leading-7 text-foreground/72",
+                                    children: "Format final menyesuaikan kondisi skripsimu, tapi contoh outputnya bisa berupa roadmap revisi, checklist konsultasi dosen, dan daftar prioritas per bab."
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 147,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 142,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "rounded-2xl bg-soft p-4 ring-1 ring-border/70 sm:p-5",
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "flex items-center gap-2 text-sm font-extrabold text-primary-deep",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV(FileCheck2, {
+                                            className: "h-5 w-5 text-gold"
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 156,
+                                            columnNumber: 13
+                                        }, this),
+                                        "Preview Roadmap Revisi"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 155,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "mt-4 space-y-3",
+                                    children: roadmapPreview.map(([period, task])=>/*#__PURE__*/ _jsxDEV("div", {
+                                            className: "grid gap-2 rounded-2xl bg-white p-4 ring-1 ring-border/70 sm:grid-cols-[110px_1fr] sm:items-center",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDEV("span", {
+                                                    className: "text-xs font-extrabold uppercase tracking-[0.12em] text-[hsl(40_72%_38%)]",
+                                                    children: period
+                                                }, void 0, false, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                                    lineNumber: 162,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("span", {
+                                                    className: "text-sm font-semibold leading-6 text-foreground/82",
+                                                    children: task
+                                                }, void 0, false, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, period, true, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                            lineNumber: 161,
+                                            columnNumber: 15
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                                    lineNumber: 159,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                            lineNumber: 154,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+                    lineNumber: 141,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+            lineNumber: 56,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx",
+        lineNumber: 55,
+        columnNumber: 3
+    }, this);
+_c = Program;
+var _c;
+$RefreshReg$(_c, "Program");
+
+
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Program.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2dyYW0udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIENsaXBib2FyZENoZWNrLFxuICBGaWxlQ2hlY2syLFxuICBGaWxlRWRpdCxcbiAgSGVhZHBob25lcyxcbiAgTWFwLFxuICBNZXNzYWdlU3F1YXJlVGV4dCxcbiAgUHJlc2VudGF0aW9uLFxuICBTZWFyY2gsXG59IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcbmltcG9ydCBncmFkSW1nIGZyb20gXCJAL2Fzc2V0cy9ncmFkdWF0aW9uLW9wdGltaXplZC5qcGdcIjtcblxuY29uc3Qgc3RlcHMgPSBbXG4gIHtcbiAgICBpY29uOiBTZWFyY2gsXG4gICAgdGl0bGU6IFwiMS4gRGlhZ25vc2lzIGtvbmRpc2lcIixcbiAgICBkZXNjOiBcIkNlcml0YWthbiBwb3Npc2kgc2tyaXBzaW11OiB0b3BpaywgYmFiLCByZXZpc2ksIGRlYWRsaW5lLCBkYW4ga2VuZGFsYSBkb3Nlbi5cIixcbiAgfSxcbiAge1xuICAgIGljb246IE1hcCxcbiAgICB0aXRsZTogXCIyLiBSb2FkbWFwIHBlcnNvbmFsXCIsXG4gICAgZGVzYzogXCJLYW1pIHN1c3VuIHVydXRhbiBrZXJqYSB5YW5nIHJlYWxpc3RpcywgZGFyaSByZXZpc2kgcGFsaW5nIHBlbnRpbmcgc2FtcGFpIHRhcmdldCBzaWRhbmcuXCIsXG4gIH0sXG4gIHtcbiAgICBpY29uOiBGaWxlRWRpdCxcbiAgICB0aXRsZTogXCIzLiBSZXZpZXcgZGFuIG1lbnRvcmluZ1wiLFxuICAgIGRlc2M6IFwiS2FtdSBiYXdhIHByb2dyZXNzLCBtZW50b3IgYmFudHUgYmVkYWggc3RydWt0dXIsIGFyZ3VtZW4sIG1ldG9kZSwgZGFuIG5leHQgYWN0aW9uLlwiLFxuICB9LFxuICB7XG4gICAgaWNvbjogQ2xpcGJvYXJkQ2hlY2ssXG4gICAgdGl0bGU6IFwiNC4gQWNjb3VudGFiaWxpdHlcIixcbiAgICBkZXNjOiBcIlByb2dyZXNzIGRpcGFudGF1IGFnYXIga2FtdSB0aWRhayBoaWxhbmcgYXJhaCwgbWVudW5kYSwgYXRhdSBrZW1iYWxpIHN0dWNrIHNlbmRpcmlhbi5cIixcbiAgfSxcbl07XG5cbmNvbnN0IGRlbGl2ZXJhYmxlcyA9IFtcbiAgXCJBdWRpdCBuYXNrYWggZGFuIHJldmlzaSBkb3NlblwiLFxuICBcIlJvYWRtYXAgcGVuZ2VyamFhbiBza3JpcHNpXCIsXG4gIFwiU2VzaSBtZW50b3JpbmcgcHJpdmF0ZVwiLFxuICBcIkZlZWRiYWNrIHN0cnVrdHVyIGRhbiBtZXRvZG9sb2dpXCIsXG4gIFwiTW9uaXRvcmluZyBwcm9ncmVzcyBtaW5nZ3VhblwiLFxuICBcIlBlcnNpYXBhbiBrb25zdWx0YXNpIGRvc2VuXCIsXG4gIFwiU2ltdWxhc2kgc2lkYW5nIGRhbiBRJkFcIixcbiAgXCJTdXBwb3J0IFdoYXRzQXBwIHNlc3VhaSBwYWtldFwiLFxuXTtcblxuY29uc3Qgcm9hZG1hcFByZXZpZXcgPSBbXG4gIFtcIkhhcmkgMS0zXCIsIFwiQXVkaXQgcmV2aXNpIGRhbiBrb25kaXNpIG5hc2thaFwiXSxcbiAgW1wiSGFyaSA0LTEwXCIsIFwiUHJpb3JpdGFzIGJhYiBkYW4gdGFyZ2V0IHJldmlzaSBwZXJ0YW1hXCJdLFxuICBbXCJNaW5nZ3UgMi00XCIsIFwiUmV2aWV3IHN0cnVrdHVyLCBtZXRvZGUsIGRhbiBhcmd1bWVuIHV0YW1hXCJdLFxuICBbXCJNZW5qZWxhbmcgc2lkYW5nXCIsIFwiTGF0aWhhbiBtZW5qYXdhYiBwZXJ0YW55YWFuIGRvc2VuXCJdLFxuXTtcblxuZXhwb3J0IGNvbnN0IFByb2dyYW0gPSAoKSA9PiAoXG4gIDxzZWN0aW9uIGlkPVwicHJvZ3JhbVwiIGNsYXNzTmFtZT1cInNlY3Rpb24tc2hlbGwgYmctc29mdFwiPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTUgc206Z2FwLTggbGc6Z3JpZC1jb2xzLVswLjlmcl8xLjFmcl0gbGc6aXRlbXMtZW5kXCI+XG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwic2VjdGlvbi1leWVicm93XCI+XG4gICAgICAgICAgICBTaXN0ZW0gcGVuZGFtcGluZ2FuXG4gICAgICAgICAgPC9wPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJtdC0zIHRleHQtWzJyZW1dIGZvbnQtZXh0cmFib2xkIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHQgc206bXQtNCBzbTp0ZXh0LTR4bCBtZDp0ZXh0LTV4bFwiPlxuICAgICAgICAgICAgUHJvZ3JhbSBXaXN1ZGEgOTAgSGFyaSB5YW5nIGJpa2luIHNrcmlwc2kgdGVyYXNhIHB1bnlhIGphbHVyLlxuICAgICAgICAgIDwvaDI+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsxNXB4XSBmb250LW1lZGl1bSBsZWFkaW5nLTcgdGV4dC1mb3JlZ3JvdW5kLzc1IG1kOnRleHQtbGcgbWQ6bGVhZGluZy04XCI+XG4gICAgICAgICAgRm9rdXNueWEgYnVrYW4gamFuamkgaW5zdGFuLiBGb2t1c255YSBtZW1idWF0IGthbXUgdGFodSBhcGEgeWFuZyBoYXJ1c1xuICAgICAgICAgIGRpa2VyamFrYW4sIGtlbmFwYSBpdHUgcGVudGluZywgZGFuIGJhZ2FpbWFuYSBtZW55YW1wYWlrYW5ueWEgZGVuZ2FuXG4gICAgICAgICAgcGVyY2F5YSBkaXJpIGtlIGRvc2VuIHBlbWJpbWJpbmcuXG4gICAgICAgIDwvcD5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTEwIGdyaWQgZ2FwLTUgc206bXQtMTQgc206Z2FwLTggbGc6Z3JpZC1jb2xzLVsxZnJfNDIwcHhdXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtMyBzbTpnYXAtNCBtZDpncmlkLWNvbHMtMlwiPlxuICAgICAgICAgIHtzdGVwcy5tYXAoKHsgaWNvbjogSWNvbiwgdGl0bGUsIGRlc2MgfSkgPT4gKFxuICAgICAgICAgICAgPGRpdiBrZXk9e3RpdGxlfSBjbGFzc05hbWU9XCJwcmVtaXVtLWNhcmQgcC01IHNtOnAtNlwiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJncmlkIGgtMTIgdy0xMiBwbGFjZS1pdGVtcy1jZW50ZXIgcm91bmRlZC0yeGwgYmctcHJpbWFyeS1kZWVwIHRleHQtZ29sZFwiPlxuICAgICAgICAgICAgICAgIDxJY29uIGNsYXNzTmFtZT1cImgtNSB3LTVcIiAvPlxuICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtdC00IHRleHQtbGcgZm9udC1leHRyYWJvbGQgdHJhY2tpbmctdGlnaHQgc206bXQtNSBzbTp0ZXh0LXhsXCI+e3RpdGxlfTwvaDM+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTMgdGV4dC1zbSBsZWFkaW5nLTcgdGV4dC1mb3JlZ3JvdW5kLzc1XCI+e2Rlc2N9PC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtMnhsIGJnLXByaW1hcnktZGVlcCB0ZXh0LXdoaXRlIHNoYWRvdy0yeGxcIj5cbiAgICAgICAgICA8aW1nXG4gICAgICAgICAgICBzcmM9e2dyYWRJbWd9XG4gICAgICAgICAgICBhbHQ9XCJNYWhhc2lzd2EgbWVyYXlha2FuIGtlbHVsdXNhbiBzZXRlbGFoIG1lbnllbGVzYWlrYW4gc2tyaXBzaVwiXG4gICAgICAgICAgICBsb2FkaW5nPVwibGF6eVwiXG4gICAgICAgICAgICBkZWNvZGluZz1cImFzeW5jXCJcbiAgICAgICAgICAgIHdpZHRoPXs3MjB9XG4gICAgICAgICAgICBoZWlnaHQ9ezg2MH1cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImgtNzIgdy1mdWxsIG9iamVjdC1jb3ZlciBzbTpoLTgwIGxnOmgtZnVsbFwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tdCBmcm9tLXByaW1hcnktZGVlcCB2aWEtcHJpbWFyeS1kZWVwLzU1IHRvLXRyYW5zcGFyZW50XCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGluc2V0LXgtMCBib3R0b20tMCBwLTUgc206cC02IG1kOnAtOFwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIGJnLXdoaXRlLzE0IHB4LTMgcHktMS41IHRleHQteHMgZm9udC1ib2xkIHRleHQtZ29sZCBiYWNrZHJvcC1ibHVyXCI+XG4gICAgICAgICAgICAgIDxQcmVzZW50YXRpb24gY2xhc3NOYW1lPVwiaC00IHctNFwiIC8+XG4gICAgICAgICAgICAgIFRhcmdldCBha2hpcjogc2lhcCBzaWRhbmdcbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTQgdGV4dC1bMS41NXJlbV0gZm9udC1leHRyYWJvbGQgbGVhZGluZy10aWdodCBzbTp0ZXh0LTN4bFwiPlxuICAgICAgICAgICAgICBCdWthbiBjdW1hIHNlbGVzYWkgbnVsaXMuIEthbXUganVnYSBzaWFwIG1lbmplbGFza2FuIHBlbmVsaXRpYW5tdS5cbiAgICAgICAgICAgIDwvaDM+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiByb3VuZGVkLTJ4bCBib3JkZXIgYm9yZGVyLWJvcmRlciBiZy13aGl0ZSBwLTUgc2hhZG93LWNhcmQgc206bXQtOCBzbTpwLTYgbWQ6cC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCBnYXAtNSBtZDpmbGV4LXJvdyBtZDppdGVtcy1jZW50ZXIgbWQ6anVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInNlY3Rpb24tZXllYnJvd1wiPlxuICAgICAgICAgICAgICBZYW5nIGthbXUgZGFwYXRrYW5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtdC0yIHRleHQtWzEuNDVyZW1dIGZvbnQtZXh0cmFib2xkIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHQgc206dGV4dC0yeGxcIj5cbiAgICAgICAgICAgICAgUGFrZXQgYmltYmluZ2FuIHlhbmcgdGVyYXNhIGxlbmdrYXAsIGJ1a2FuIHRhbWJhbCBzdWxhbS5cbiAgICAgICAgICAgIDwvaDM+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGFcbiAgICAgICAgICAgIGhyZWY9XCIjcGFrZXRcIlxuICAgICAgICAgICAgY2xhc3NOYW1lPVwicHJlbWl1bS1idXR0b24gaW5saW5lLWZsZXggdy1mdWxsIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiByb3VuZGVkLTJ4bCBiZy1wcmltYXJ5LWRlZXAgcHgtNSBweS0zIHRleHQtc20gZm9udC1ib2xkIHRleHQtd2hpdGUgdHJhbnNpdGlvbiBob3ZlcjpiZy1wcmltYXJ5IHNtOnctYXV0b1wiXG4gICAgICAgICAgPlxuICAgICAgICAgICAgQmFuZGluZ2thbiBQYWtldFxuICAgICAgICAgICAgPE1lc3NhZ2VTcXVhcmVUZXh0IGNsYXNzTmFtZT1cImgtNCB3LTRcIiAvPlxuICAgICAgICAgIDwvYT5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiBncmlkIGdhcC0yLjUgc206bXQtNyBzbTpncmlkLWNvbHMtMiBzbTpnYXAtMyBsZzpncmlkLWNvbHMtNFwiPlxuICAgICAgICAgIHtkZWxpdmVyYWJsZXMubWFwKChpdGVtKSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGtleT17aXRlbX0gY2xhc3NOYW1lPVwicm91bmRlZC14bCBiZy1zb2Z0IHB4LTQgcHktMyB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kLzkwIHJpbmctMSByaW5nLWJvcmRlci82MFwiPlxuICAgICAgICAgICAgICB7aXRlbX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICkpfVxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC01IGZsZXggaXRlbXMtc3RhcnQgZ2FwLTMgcm91bmRlZC0yeGwgYmctZ29sZC1zb2Z0IHAtNCB0ZXh0LXNtIGxlYWRpbmctNyB0ZXh0LWZvcmVncm91bmQvODAgcmluZy0xIHJpbmctZ29sZC8yMFwiPlxuICAgICAgICAgIDxIZWFkcGhvbmVzIGNsYXNzTmFtZT1cIm10LTEgaC01IHctNSBzaHJpbmstMCB0ZXh0LWdvbGRcIiAvPlxuICAgICAgICAgIEtvbnN1bHRhc2kgYXdhbCBncmF0aXMgZGlwYWthaSB1bnR1ayBtZW1iYWNhIGtvbmRpc2kgZGFuIG1lcmVrb21lbmRhc2lrYW5cbiAgICAgICAgICBwYWtldCB5YW5nIHBhbGluZyBtYXN1ayBha2FsIHVudHVrbXUuXG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiBncmlkIGdhcC00IHJvdW5kZWQtMnhsIGJvcmRlciBib3JkZXItYm9yZGVyIGJnLXdoaXRlIHAtNSBzaGFkb3ctY2FyZCBzbTptdC04IHNtOnAtNiBsZzpncmlkLWNvbHMtWzAuODVmcl8xLjE1ZnJdIGxnOnAtOFwiPlxuICAgICAgICA8ZGl2PlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInNlY3Rpb24tZXllYnJvd1wiPkNvbnRvaCBkZWxpdmVyYWJsZTwvcD5cbiAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwibXQtMiB0ZXh0LVsxLjQ1cmVtXSBmb250LWV4dHJhYm9sZCBsZWFkaW5nLXRpZ2h0IHRyYWNraW5nLXRpZ2h0IHNtOnRleHQtMnhsXCI+XG4gICAgICAgICAgICBLYW11IHRpZGFrIHB1bGFuZyBkYXJpIHNlc2kgaGFueWEgZGVuZ2FuIG1vdGl2YXNpLiBLYW11IHB1bGFuZyBkZW5nYW4gcGV0YSBrZXJqYS5cbiAgICAgICAgICA8L2gzPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTQgdGV4dC1zbSBmb250LW1lZGl1bSBsZWFkaW5nLTcgdGV4dC1mb3JlZ3JvdW5kLzcyXCI+XG4gICAgICAgICAgICBGb3JtYXQgZmluYWwgbWVueWVzdWFpa2FuIGtvbmRpc2kgc2tyaXBzaW11LCB0YXBpIGNvbnRvaCBvdXRwdXRueWFcbiAgICAgICAgICAgIGJpc2EgYmVydXBhIHJvYWRtYXAgcmV2aXNpLCBjaGVja2xpc3Qga29uc3VsdGFzaSBkb3NlbiwgZGFuIGRhZnRhclxuICAgICAgICAgICAgcHJpb3JpdGFzIHBlciBiYWIuXG4gICAgICAgICAgPC9wPlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvdW5kZWQtMnhsIGJnLXNvZnQgcC00IHJpbmctMSByaW5nLWJvcmRlci83MCBzbTpwLTVcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQtc20gZm9udC1leHRyYWJvbGQgdGV4dC1wcmltYXJ5LWRlZXBcIj5cbiAgICAgICAgICAgIDxGaWxlQ2hlY2syIGNsYXNzTmFtZT1cImgtNSB3LTUgdGV4dC1nb2xkXCIgLz5cbiAgICAgICAgICAgIFByZXZpZXcgUm9hZG1hcCBSZXZpc2lcbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTQgc3BhY2UteS0zXCI+XG4gICAgICAgICAgICB7cm9hZG1hcFByZXZpZXcubWFwKChbcGVyaW9kLCB0YXNrXSkgPT4gKFxuICAgICAgICAgICAgICA8ZGl2IGtleT17cGVyaW9kfSBjbGFzc05hbWU9XCJncmlkIGdhcC0yIHJvdW5kZWQtMnhsIGJnLXdoaXRlIHAtNCByaW5nLTEgcmluZy1ib3JkZXIvNzAgc206Z3JpZC1jb2xzLVsxMTBweF8xZnJdIHNtOml0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1leHRyYWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjEyZW1dIHRleHQtW2hzbCg0MF83MiVfMzglKV1cIj5cbiAgICAgICAgICAgICAgICAgIHtwZXJpb2R9XG4gICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1zZW1pYm9sZCBsZWFkaW5nLTYgdGV4dC1mb3JlZ3JvdW5kLzgyXCI+e3Rhc2t9PC9zcGFuPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICA8L3NlY3Rpb24+XG4pO1xuIl0sIm5hbWVzIjpbIkNsaXBib2FyZENoZWNrIiwiRmlsZUNoZWNrMiIsIkZpbGVFZGl0IiwiSGVhZHBob25lcyIsIk1hcCIsIk1lc3NhZ2VTcXVhcmVUZXh0IiwiUHJlc2VudGF0aW9uIiwiU2VhcmNoIiwiZ3JhZEltZyIsInN0ZXBzIiwiaWNvbiIsInRpdGxlIiwiZGVzYyIsImRlbGl2ZXJhYmxlcyIsInJvYWRtYXBQcmV2aWV3IiwiUHJvZ3JhbSIsInNlY3Rpb24iLCJpZCIsImNsYXNzTmFtZSIsImRpdiIsInAiLCJoMiIsIm1hcCIsIkljb24iLCJzcGFuIiwiaDMiLCJpbWciLCJzcmMiLCJhbHQiLCJsb2FkaW5nIiwiZGVjb2RpbmciLCJ3aWR0aCIsImhlaWdodCIsImEiLCJocmVmIiwiaXRlbSIsInBlcmlvZCIsInRhc2siXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsU0FDRUEsY0FBYyxFQUNkQyxVQUFVLEVBQ1ZDLFFBQVEsRUFDUkMsVUFBVSxFQUNWQyxHQUFHLEVBQ0hDLGlCQUFpQixFQUNqQkMs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

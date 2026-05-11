@@ -1,0 +1,560 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/landing/Affiliate.tsx");import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;
+
+let prevRefreshReg;
+let prevRefreshSig;
+
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react-swc can't detect preamble. Something is wrong."
+    );
+  }
+
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=c94b15b7"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import { ArrowRight, BadgePercent, Download, HandCoins, MessageCircle, Share2, ShieldCheck, Sparkles, UsersRound } from "/node_modules/.vite/deps/lucide-react.js?v=c94b15b7";
+import { trackCtaClick } from "/src/lib/analytics.ts";
+import { whatsappMessages, whatsappUrl } from "/src/lib/whatsapp.ts";
+const affiliateUrl = whatsappUrl(whatsappMessages.affiliate);
+const steps = [
+    {
+        icon: Share2,
+        title: "Rekomendasikan",
+        desc: "Ajak teman, saudara, atau kenalan yang sedang stuck skripsi untuk cek kondisi gratis."
+    },
+    {
+        icon: UsersRound,
+        title: "Mereka ikut paket",
+        desc: "Komisi berlaku saat referral kamu benar-benar order dan pembayaran paket terkonfirmasi."
+    },
+    {
+        icon: HandCoins,
+        title: "Kamu dapat 10%",
+        desc: "Kamu mendapat komisi 10% dari nilai paket yang dibeli melalui referral-mu."
+    }
+];
+const examples = [
+    [
+        "Starter Direction",
+        "Rp3.500.000",
+        "Rp350.000"
+    ],
+    [
+        "Fast Track Progress",
+        "Rp7.500.000",
+        "Rp750.000"
+    ],
+    [
+        "VIP Wisuda 90 Hari",
+        "Rp15.000.000",
+        "Rp1.500.000"
+    ]
+];
+const promoPosters = [
+    {
+        title: "Poster Utama",
+        desc: "Materi promosi BimbinganYuk untuk edukasi calon referral.",
+        href: "/Poster BimbinganYuk.png",
+        previewSrc: "/Poster BimbinganYuk-preview.jpg",
+        fileName: "Poster BimbinganYuk.png"
+    },
+    {
+        title: "Poster Affiliate",
+        desc: "Materi khusus affiliator dengan info komisi dan ajakan daftar.",
+        href: "/Poster Affiliate Bimbinganyuk.png",
+        previewSrc: "/Poster Affiliate Bimbinganyuk-preview.jpg",
+        fileName: "Poster Affiliate Bimbinganyuk.png"
+    }
+];
+export const Affiliate = ()=>/*#__PURE__*/ _jsxDEV("section", {
+        id: "affiliate",
+        className: "section-shell bg-primary-deep text-white",
+        children: /*#__PURE__*/ _jsxDEV("div", {
+            className: "container",
+            children: /*#__PURE__*/ _jsxDEV("div", {
+                className: "grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center",
+                children: [
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        children: [
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "inline-flex items-center gap-2 rounded-full border border-gold/25 bg-gold/12 px-3 py-2 text-xs font-extrabold uppercase tracking-[0.14em] text-gold",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV(BadgePercent, {
+                                        className: "h-4 w-4"
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Affiliate BimbinganYuk"
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 53,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("h2", {
+                                className: "mt-5 text-[2rem] font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl",
+                                children: "Bantu temanmu keluar dari stuck skripsi, kamu dapat komisi 10%."
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("p", {
+                                className: "mt-4 text-[15px] font-medium leading-7 text-white/82 md:text-lg md:leading-8",
+                                children: "Kalau kamu punya teman, saudara, adik tingkat, atau kenalan yang butuh pendampingan skripsi, rekomendasikan BimbinganYuk. Saat mereka order paket memakai referral-mu, kamu mendapatkan komisi."
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 60,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV("a", {
+                                        href: affiliateUrl,
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        onClick: ()=>trackCtaClick("Daftar Affiliate", "affiliate_section"),
+                                        className: "premium-button inline-flex items-center justify-center gap-2 rounded-2xl bg-gold px-6 py-4 text-sm font-extrabold text-primary-deep shadow-2xl hover:brightness-110",
+                                        children: [
+                                            /*#__PURE__*/ _jsxDEV(MessageCircle, {
+                                                className: "h-5 w-5"
+                                            }, void 0, false, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 73,
+                                                columnNumber: 15
+                                            }, this),
+                                            "Daftar Affiliate",
+                                            /*#__PURE__*/ _jsxDEV(ArrowRight, {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 75,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("a", {
+                                        href: "#paket",
+                                        onClick: ()=>trackCtaClick("Lihat Potensi Komisi", "affiliate_section"),
+                                        className: "premium-button inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-6 py-4 text-sm font-bold text-white hover:bg-white/14",
+                                        children: "Lihat Paket"
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 65,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "mt-6 overflow-hidden rounded-2xl border border-gold/25 bg-white/[0.07] shadow-2xl ring-1 ring-white/10 backdrop-blur",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "flex flex-col gap-3 border-b border-white/10 bg-white/[0.06] p-4 sm:flex-row sm:items-center sm:justify-between",
+                                        children: [
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "flex items-center gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("span", {
+                                                        className: "grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-gold text-primary-deep shadow-lg",
+                                                        children: /*#__PURE__*/ _jsxDEV(Sparkles, {
+                                                            className: "h-5 w-5"
+                                                        }, void 0, false, {
+                                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                            lineNumber: 89,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("h3", {
+                                                                className: "font-extrabold tracking-tight",
+                                                                children: "Promo Kit Affiliator"
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 92,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "mt-1 text-xs font-semibold leading-5 text-white/68",
+                                                                children: "Siap share ke WhatsApp, Instagram, grup kampus, atau calon referral."
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 93,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 91,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 87,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("span", {
+                                                className: "w-fit rounded-full border border-gold/35 bg-gold/12 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-gold",
+                                                children: "2 poster"
+                                            }, void 0, false, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 98,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 86,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "grid gap-3 p-4 sm:grid-cols-2",
+                                        children: promoPosters.map((poster)=>/*#__PURE__*/ _jsxDEV("article", {
+                                                className: "overflow-hidden rounded-2xl border border-white/10 bg-[hsl(222_60%_7%/.72)]",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "relative aspect-[4/5] overflow-hidden bg-white/[0.05]",
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("img", {
+                                                                src: poster.previewSrc,
+                                                                alt: poster.title,
+                                                                loading: "lazy",
+                                                                decoding: "async",
+                                                                className: "h-full w-full object-cover"
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 106,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                                className: "absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-primary-deep/95 to-transparent"
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 113,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 105,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "p-4",
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                                className: "font-extrabold",
+                                                                children: poster.title
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 116,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "mt-1 min-h-[40px] text-xs font-medium leading-5 text-white/66",
+                                                                children: poster.desc
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 117,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("a", {
+                                                                href: poster.href,
+                                                                download: poster.fileName,
+                                                                onClick: ()=>trackCtaClick(`Download ${poster.title}`, "affiliate_promo_kit"),
+                                                                className: "premium-button mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gold px-4 py-3 text-sm font-extrabold text-primary-deep shadow-lg hover:brightness-110",
+                                                                children: [
+                                                                    /*#__PURE__*/ _jsxDEV(Download, {
+                                                                        className: "h-4 w-4"
+                                                                    }, void 0, false, {
+                                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                        lineNumber: 124,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    "Download Poster"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 118,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 115,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, poster.title, true, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 85,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "mt-5 flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4 text-sm font-semibold leading-7 text-white/82 ring-1 ring-white/10",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV(ShieldCheck, {
+                                        className: "mt-1 h-5 w-5 shrink-0 text-gold"
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 133,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Program ini cocok untuk mahasiswa, alumni, komunitas kampus, mentor, atau siapa pun yang ingin merekomendasikan bantuan skripsi yang etis."
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 132,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        className: "space-y-4",
+                        children: [
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "grid gap-3 sm:grid-cols-3 lg:grid-cols-1",
+                                children: steps.map(({ icon: Icon, title, desc }, index)=>/*#__PURE__*/ _jsxDEV("div", {
+                                        className: "rounded-2xl border border-white/10 bg-white/[0.07] p-4 shadow-2xl ring-1 ring-white/10 backdrop-blur",
+                                        children: /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "flex items-start gap-3",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDEV("span", {
+                                                    className: "grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-gold text-primary-deep",
+                                                    children: /*#__PURE__*/ _jsxDEV(Icon, {
+                                                        className: "h-5 w-5"
+                                                    }, void 0, false, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 145,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                    lineNumber: 144,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ _jsxDEV("p", {
+                                                            className: "text-xs font-extrabold uppercase tracking-[0.14em] text-gold",
+                                                            children: [
+                                                                "Step ",
+                                                                index + 1
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                            lineNumber: 148,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                                            className: "mt-1 font-extrabold tracking-tight",
+                                                            children: title
+                                                        }, void 0, false, {
+                                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                            lineNumber: 151,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ _jsxDEV("p", {
+                                                            className: "mt-2 text-sm font-medium leading-7 text-white/74",
+                                                            children: desc
+                                                        }, void 0, false, {
+                                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                            lineNumber: 152,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                    lineNumber: 147,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                            lineNumber: 143,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, title, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 142,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 140,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "overflow-hidden rounded-2xl border border-gold/25 bg-white text-primary-deep shadow-2xl",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "border-b border-border bg-gold-soft p-4",
+                                        children: /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "text-xs font-extrabold uppercase tracking-[0.14em] text-[hsl(40_72%_38%)]",
+                                            children: "Contoh potensi komisi"
+                                        }, void 0, false, {
+                                            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                            lineNumber: 161,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 160,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "divide-y divide-border",
+                                        children: examples.map(([name, price, commission])=>/*#__PURE__*/ _jsxDEV("div", {
+                                                className: "grid grid-cols-[1fr_auto] gap-3 p-4",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "font-extrabold",
+                                                                children: name
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 169,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "mt-1 text-xs font-semibold text-foreground/58",
+                                                                children: [
+                                                                    "Harga paket ",
+                                                                    price
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 168,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "text-right",
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "text-lg font-extrabold text-[hsl(40_72%_38%)]",
+                                                                children: commission
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 173,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "text-[11px] font-bold uppercase tracking-[0.12em] text-foreground/50",
+                                                                children: "komisi"
+                                                            }, void 0, false, {
+                                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                                lineNumber: 174,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                        lineNumber: 172,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, name, true, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                                lineNumber: 167,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                        lineNumber: 165,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                                lineNumber: 159,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                        lineNumber: 139,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this)
+        }, void 0, false, {
+            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+            lineNumber: 50,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx",
+        lineNumber: 49,
+        columnNumber: 3
+    }, this);
+_c = Affiliate;
+var _c;
+$RefreshReg$(_c, "Affiliate");
+
+
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/Affiliate.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFmZmlsaWF0ZS50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQXJyb3dSaWdodCwgQmFkZ2VQZXJjZW50LCBEb3dubG9hZCwgSGFuZENvaW5zLCBNZXNzYWdlQ2lyY2xlLCBTaGFyZTIsIFNoaWVsZENoZWNrLCBTcGFya2xlcywgVXNlcnNSb3VuZCB9IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcbmltcG9ydCB7IHRyYWNrQ3RhQ2xpY2sgfSBmcm9tIFwiQC9saWIvYW5hbHl0aWNzXCI7XG5pbXBvcnQgeyB3aGF0c2FwcE1lc3NhZ2VzLCB3aGF0c2FwcFVybCB9IGZyb20gXCJAL2xpYi93aGF0c2FwcFwiO1xuXG5jb25zdCBhZmZpbGlhdGVVcmwgPSB3aGF0c2FwcFVybCh3aGF0c2FwcE1lc3NhZ2VzLmFmZmlsaWF0ZSk7XG5cbmNvbnN0IHN0ZXBzID0gW1xuICB7XG4gICAgaWNvbjogU2hhcmUyLFxuICAgIHRpdGxlOiBcIlJla29tZW5kYXNpa2FuXCIsXG4gICAgZGVzYzogXCJBamFrIHRlbWFuLCBzYXVkYXJhLCBhdGF1IGtlbmFsYW4geWFuZyBzZWRhbmcgc3R1Y2sgc2tyaXBzaSB1bnR1ayBjZWsga29uZGlzaSBncmF0aXMuXCIsXG4gIH0sXG4gIHtcbiAgICBpY29uOiBVc2Vyc1JvdW5kLFxuICAgIHRpdGxlOiBcIk1lcmVrYSBpa3V0IHBha2V0XCIsXG4gICAgZGVzYzogXCJLb21pc2kgYmVybGFrdSBzYWF0IHJlZmVycmFsIGthbXUgYmVuYXItYmVuYXIgb3JkZXIgZGFuIHBlbWJheWFyYW4gcGFrZXQgdGVya29uZmlybWFzaS5cIixcbiAgfSxcbiAge1xuICAgIGljb246IEhhbmRDb2lucyxcbiAgICB0aXRsZTogXCJLYW11IGRhcGF0IDEwJVwiLFxuICAgIGRlc2M6IFwiS2FtdSBtZW5kYXBhdCBrb21pc2kgMTAlIGRhcmkgbmlsYWkgcGFrZXQgeWFuZyBkaWJlbGkgbWVsYWx1aSByZWZlcnJhbC1tdS5cIixcbiAgfSxcbl07XG5cbmNvbnN0IGV4YW1wbGVzID0gW1xuICBbXCJTdGFydGVyIERpcmVjdGlvblwiLCBcIlJwMy41MDAuMDAwXCIsIFwiUnAzNTAuMDAwXCJdLFxuICBbXCJGYXN0IFRyYWNrIFByb2dyZXNzXCIsIFwiUnA3LjUwMC4wMDBcIiwgXCJScDc1MC4wMDBcIl0sXG4gIFtcIlZJUCBXaXN1ZGEgOTAgSGFyaVwiLCBcIlJwMTUuMDAwLjAwMFwiLCBcIlJwMS41MDAuMDAwXCJdLFxuXTtcblxuY29uc3QgcHJvbW9Qb3N0ZXJzID0gW1xuICB7XG4gICAgdGl0bGU6IFwiUG9zdGVyIFV0YW1hXCIsXG4gICAgZGVzYzogXCJNYXRlcmkgcHJvbW9zaSBCaW1iaW5nYW5ZdWsgdW50dWsgZWR1a2FzaSBjYWxvbiByZWZlcnJhbC5cIixcbiAgICBocmVmOiBcIi9Qb3N0ZXIgQmltYmluZ2FuWXVrLnBuZ1wiLFxuICAgIHByZXZpZXdTcmM6IFwiL1Bvc3RlciBCaW1iaW5nYW5ZdWstcHJldmlldy5qcGdcIixcbiAgICBmaWxlTmFtZTogXCJQb3N0ZXIgQmltYmluZ2FuWXVrLnBuZ1wiLFxuICB9LFxuICB7XG4gICAgdGl0bGU6IFwiUG9zdGVyIEFmZmlsaWF0ZVwiLFxuICAgIGRlc2M6IFwiTWF0ZXJpIGtodXN1cyBhZmZpbGlhdG9yIGRlbmdhbiBpbmZvIGtvbWlzaSBkYW4gYWpha2FuIGRhZnRhci5cIixcbiAgICBocmVmOiBcIi9Qb3N0ZXIgQWZmaWxpYXRlIEJpbWJpbmdhbnl1ay5wbmdcIixcbiAgICBwcmV2aWV3U3JjOiBcIi9Qb3N0ZXIgQWZmaWxpYXRlIEJpbWJpbmdhbnl1ay1wcmV2aWV3LmpwZ1wiLFxuICAgIGZpbGVOYW1lOiBcIlBvc3RlciBBZmZpbGlhdGUgQmltYmluZ2FueXVrLnBuZ1wiLFxuICB9LFxuXTtcblxuZXhwb3J0IGNvbnN0IEFmZmlsaWF0ZSA9ICgpID0+IChcbiAgPHNlY3Rpb24gaWQ9XCJhZmZpbGlhdGVcIiBjbGFzc05hbWU9XCJzZWN0aW9uLXNoZWxsIGJnLXByaW1hcnktZGVlcCB0ZXh0LXdoaXRlXCI+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtOCBsZzpncmlkLWNvbHMtWzAuODVmcl8xLjE1ZnJdIGxnOml0ZW1zLWNlbnRlclwiPlxuICAgICAgICA8ZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWdvbGQvMjUgYmctZ29sZC8xMiBweC0zIHB5LTIgdGV4dC14cyBmb250LWV4dHJhYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTRlbV0gdGV4dC1nb2xkXCI+XG4gICAgICAgICAgICA8QmFkZ2VQZXJjZW50IGNsYXNzTmFtZT1cImgtNCB3LTRcIiAvPlxuICAgICAgICAgICAgQWZmaWxpYXRlIEJpbWJpbmdhbll1a1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJtdC01IHRleHQtWzJyZW1dIGZvbnQtZXh0cmFib2xkIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHQgc206dGV4dC00eGwgbWQ6dGV4dC01eGxcIj5cbiAgICAgICAgICAgIEJhbnR1IHRlbWFubXUga2VsdWFyIGRhcmkgc3R1Y2sgc2tyaXBzaSwga2FtdSBkYXBhdCBrb21pc2kgMTAlLlxuICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtNCB0ZXh0LVsxNXB4XSBmb250LW1lZGl1bSBsZWFkaW5nLTcgdGV4dC13aGl0ZS84MiBtZDp0ZXh0LWxnIG1kOmxlYWRpbmctOFwiPlxuICAgICAgICAgICAgS2FsYXUga2FtdSBwdW55YSB0ZW1hbiwgc2F1ZGFyYSwgYWRpayB0aW5na2F0LCBhdGF1IGtlbmFsYW4geWFuZ1xuICAgICAgICAgICAgYnV0dWggcGVuZGFtcGluZ2FuIHNrcmlwc2ksIHJla29tZW5kYXNpa2FuIEJpbWJpbmdhbll1ay4gU2FhdCBtZXJla2FcbiAgICAgICAgICAgIG9yZGVyIHBha2V0IG1lbWFrYWkgcmVmZXJyYWwtbXUsIGthbXUgbWVuZGFwYXRrYW4ga29taXNpLlxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTYgZmxleCBmbGV4LWNvbCBnYXAtMyBzbTpmbGV4LXJvdyBzbTpmbGV4LXdyYXBcIj5cbiAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgIGhyZWY9e2FmZmlsaWF0ZVVybH1cbiAgICAgICAgICAgICAgdGFyZ2V0PVwiX2JsYW5rXCJcbiAgICAgICAgICAgICAgcmVsPVwibm9yZWZlcnJlclwiXG4gICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHRyYWNrQ3RhQ2xpY2soXCJEYWZ0YXIgQWZmaWxpYXRlXCIsIFwiYWZmaWxpYXRlX3NlY3Rpb25cIil9XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cInByZW1pdW0tYnV0dG9uIGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiByb3VuZGVkLTJ4bCBiZy1nb2xkIHB4LTYgcHktNCB0ZXh0LXNtIGZvbnQtZXh0cmFib2xkIHRleHQtcHJpbWFyeS1kZWVwIHNoYWRvdy0yeGwgaG92ZXI6YnJpZ2h0bmVzcy0xMTBcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICA8TWVzc2FnZUNpcmNsZSBjbGFzc05hbWU9XCJoLTUgdy01XCIgLz5cbiAgICAgICAgICAgICAgRGFmdGFyIEFmZmlsaWF0ZVxuICAgICAgICAgICAgICA8QXJyb3dSaWdodCBjbGFzc05hbWU9XCJoLTQgdy00XCIgLz5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgIGhyZWY9XCIjcGFrZXRcIlxuICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB0cmFja0N0YUNsaWNrKFwiTGloYXQgUG90ZW5zaSBLb21pc2lcIiwgXCJhZmZpbGlhdGVfc2VjdGlvblwiKX1cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicHJlbWl1bS1idXR0b24gaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtMnhsIGJvcmRlciBib3JkZXItd2hpdGUvMjAgYmctd2hpdGUvMTAgcHgtNiBweS00IHRleHQtc20gZm9udC1ib2xkIHRleHQtd2hpdGUgaG92ZXI6Ymctd2hpdGUvMTRcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICBMaWhhdCBQYWtldFxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1nb2xkLzI1IGJnLXdoaXRlL1swLjA3XSBzaGFkb3ctMnhsIHJpbmctMSByaW5nLXdoaXRlLzEwIGJhY2tkcm9wLWJsdXJcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCBnYXAtMyBib3JkZXItYiBib3JkZXItd2hpdGUvMTAgYmctd2hpdGUvWzAuMDZdIHAtNCBzbTpmbGV4LXJvdyBzbTppdGVtcy1jZW50ZXIgc206anVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTNcIj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJncmlkIGgtMTEgdy0xMSBzaHJpbmstMCBwbGFjZS1pdGVtcy1jZW50ZXIgcm91bmRlZC0yeGwgYmctZ29sZCB0ZXh0LXByaW1hcnktZGVlcCBzaGFkb3ctbGdcIj5cbiAgICAgICAgICAgICAgICAgIDxTcGFya2xlcyBjbGFzc05hbWU9XCJoLTUgdy01XCIgLz5cbiAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJmb250LWV4dHJhYm9sZCB0cmFja2luZy10aWdodFwiPlByb21vIEtpdCBBZmZpbGlhdG9yPC9oMz5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTEgdGV4dC14cyBmb250LXNlbWlib2xkIGxlYWRpbmctNSB0ZXh0LXdoaXRlLzY4XCI+XG4gICAgICAgICAgICAgICAgICAgIFNpYXAgc2hhcmUga2UgV2hhdHNBcHAsIEluc3RhZ3JhbSwgZ3J1cCBrYW1wdXMsIGF0YXUgY2Fsb24gcmVmZXJyYWwuXG4gICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ3LWZpdCByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1nb2xkLzM1IGJnLWdvbGQvMTIgcHgtMyBweS0xIHRleHQtWzExcHhdIGZvbnQtZXh0cmFib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNGVtXSB0ZXh0LWdvbGRcIj5cbiAgICAgICAgICAgICAgICAyIHBvc3RlclxuICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBnYXAtMyBwLTQgc206Z3JpZC1jb2xzLTJcIj5cbiAgICAgICAgICAgICAge3Byb21vUG9zdGVycy5tYXAoKHBvc3RlcikgPT4gKFxuICAgICAgICAgICAgICAgIDxhcnRpY2xlIGtleT17cG9zdGVyLnRpdGxlfSBjbGFzc05hbWU9XCJvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci13aGl0ZS8xMCBiZy1baHNsKDIyMl82MCVfNyUvLjcyKV1cIj5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVsYXRpdmUgYXNwZWN0LVs0LzVdIG92ZXJmbG93LWhpZGRlbiBiZy13aGl0ZS9bMC4wNV1cIj5cbiAgICAgICAgICAgICAgICAgICAgPGltZ1xuICAgICAgICAgICAgICAgICAgICAgIHNyYz17cG9zdGVyLnByZXZpZXdTcmN9XG4gICAgICAgICAgICAgICAgICAgICAgYWx0PXtwb3N0ZXIudGl0bGV9XG4gICAgICAgICAgICAgICAgICAgICAgbG9hZGluZz1cImxhenlcIlxuICAgICAgICAgICAgICAgICAgICAgIGRlY29kaW5nPVwiYXN5bmNcIlxuICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImgtZnVsbCB3LWZ1bGwgb2JqZWN0LWNvdmVyXCJcbiAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC14LTAgYm90dG9tLTAgaC0yMCBiZy1ncmFkaWVudC10by10IGZyb20tcHJpbWFyeS1kZWVwLzk1IHRvLXRyYW5zcGFyZW50XCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwLTRcIj5cbiAgICAgICAgICAgICAgICAgICAgPGg0IGNsYXNzTmFtZT1cImZvbnQtZXh0cmFib2xkXCI+e3Bvc3Rlci50aXRsZX08L2g0PlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIG1pbi1oLVs0MHB4XSB0ZXh0LXhzIGZvbnQtbWVkaXVtIGxlYWRpbmctNSB0ZXh0LXdoaXRlLzY2XCI+e3Bvc3Rlci5kZXNjfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgPGFcbiAgICAgICAgICAgICAgICAgICAgICBocmVmPXtwb3N0ZXIuaHJlZn1cbiAgICAgICAgICAgICAgICAgICAgICBkb3dubG9hZD17cG9zdGVyLmZpbGVOYW1lfVxuICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHRyYWNrQ3RhQ2xpY2soYERvd25sb2FkICR7cG9zdGVyLnRpdGxlfWAsIFwiYWZmaWxpYXRlX3Byb21vX2tpdFwiKX1cbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJwcmVtaXVtLWJ1dHRvbiBtdC00IGlubGluZS1mbGV4IHctZnVsbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgcm91bmRlZC0yeGwgYmctZ29sZCBweC00IHB5LTMgdGV4dC1zbSBmb250LWV4dHJhYm9sZCB0ZXh0LXByaW1hcnktZGVlcCBzaGFkb3ctbGcgaG92ZXI6YnJpZ2h0bmVzcy0xMTBcIlxuICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgPERvd25sb2FkIGNsYXNzTmFtZT1cImgtNCB3LTRcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgIERvd25sb2FkIFBvc3RlclxuICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2FydGljbGU+XG4gICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC01IGZsZXggaXRlbXMtc3RhcnQgZ2FwLTMgcm91bmRlZC0yeGwgYmctd2hpdGUvWzAuMDhdIHAtNCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgbGVhZGluZy03IHRleHQtd2hpdGUvODIgcmluZy0xIHJpbmctd2hpdGUvMTBcIj5cbiAgICAgICAgICAgIDxTaGllbGRDaGVjayBjbGFzc05hbWU9XCJtdC0xIGgtNSB3LTUgc2hyaW5rLTAgdGV4dC1nb2xkXCIgLz5cbiAgICAgICAgICAgIFByb2dyYW0gaW5pIGNvY29rIHVudHVrIG1haGFzaXN3YSwgYWx1bW5pLCBrb211bml0YXMga2FtcHVzLCBtZW50b3IsXG4gICAgICAgICAgICBhdGF1IHNpYXBhIHB1biB5YW5nIGluZ2luIG1lcmVrb21lbmRhc2lrYW4gYmFudHVhbiBza3JpcHNpIHlhbmcgZXRpcy5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTRcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTMgc206Z3JpZC1jb2xzLTMgbGc6Z3JpZC1jb2xzLTFcIj5cbiAgICAgICAgICAgIHtzdGVwcy5tYXAoKHsgaWNvbjogSWNvbiwgdGl0bGUsIGRlc2MgfSwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgPGRpdiBrZXk9e3RpdGxlfSBjbGFzc05hbWU9XCJyb3VuZGVkLTJ4bCBib3JkZXIgYm9yZGVyLXdoaXRlLzEwIGJnLXdoaXRlL1swLjA3XSBwLTQgc2hhZG93LTJ4bCByaW5nLTEgcmluZy13aGl0ZS8xMCBiYWNrZHJvcC1ibHVyXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLXN0YXJ0IGdhcC0zXCI+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJncmlkIGgtMTEgdy0xMSBzaHJpbmstMCBwbGFjZS1pdGVtcy1jZW50ZXIgcm91bmRlZC0yeGwgYmctZ29sZCB0ZXh0LXByaW1hcnktZGVlcFwiPlxuICAgICAgICAgICAgICAgICAgICA8SWNvbiBjbGFzc05hbWU9XCJoLTUgdy01XCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1leHRyYWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE0ZW1dIHRleHQtZ29sZFwiPlxuICAgICAgICAgICAgICAgICAgICAgIFN0ZXAge2luZGV4ICsgMX1cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwibXQtMSBmb250LWV4dHJhYm9sZCB0cmFja2luZy10aWdodFwiPnt0aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0yIHRleHQtc20gZm9udC1tZWRpdW0gbGVhZGluZy03IHRleHQtd2hpdGUvNzRcIj57ZGVzY308L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwib3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtMnhsIGJvcmRlciBib3JkZXItZ29sZC8yNSBiZy13aGl0ZSB0ZXh0LXByaW1hcnktZGVlcCBzaGFkb3ctMnhsXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJvcmRlci1iIGJvcmRlci1ib3JkZXIgYmctZ29sZC1zb2Z0IHAtNFwiPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtZXh0cmFib2xkIHVwcGVyY2FzZSB0cmFja2luZy1bMC4xNGVtXSB0ZXh0LVtoc2woNDBfNzIlXzM4JSldXCI+XG4gICAgICAgICAgICAgICAgQ29udG9oIHBvdGVuc2kga29taXNpXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJkaXZpZGUteSBkaXZpZGUtYm9yZGVyXCI+XG4gICAgICAgICAgICAgIHtleGFtcGxlcy5tYXAoKFtuYW1lLCBwcmljZSwgY29tbWlzc2lvbl0pID0+IChcbiAgICAgICAgICAgICAgICA8ZGl2IGtleT17bmFtZX0gY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtWzFmcl9hdXRvXSBnYXAtMyBwLTRcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtZXh0cmFib2xkXCI+e25hbWV9PC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0xIHRleHQteHMgZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQvNThcIj5IYXJnYSBwYWtldCB7cHJpY2V9PC9wPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtcmlnaHRcIj5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LWV4dHJhYm9sZCB0ZXh0LVtoc2woNDBfNzIlXzM4JSldXCI+e2NvbW1pc3Npb259PC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsxMXB4XSBmb250LWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjEyZW1dIHRleHQtZm9yZWdyb3VuZC81MFwiPmtvbWlzaTwvcD5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICA8L3NlY3Rpb24+XG4pO1xuIl0sIm5hbWVzIjpbIkFycm93UmlnaHQiLCJCYWRnZVBlcmNlbnQiLCJEb3dubG9hZCIsIkhhbmRDb2lucyIsIk1lc3NhZ2VDaXJjbGUiLCJTaGFyZTIiLCJTaGllbGRDaGVjayIsIlNwYXJrbGVzIiwiVXNlcnNSb3VuZCIsInRyYWNrQ3RhQ2xpY2siLCJ3aGF0c2FwcE1lc3NhZ2VzIiwid2hhdHNhcHBVcmwiLCJhZmZpbGlhdGVVcmwiLCJhZmZpbGlhdGUiLCJzdGVwcyIsImljb24iLCJ0aXRsZSIsImRlc2MiLCJleGFtcGxlcyIsInByb21vUG9zdGVycyIsImhyZWYiLCJwcmV2aWV3U3JjIiwiZmlsZU5hbWUiLCJBZmZpbGlhdGUiLCJzZWN0aW9uIiwiaWQiLCJjbGFzc05hbWUiLCJkaXYiLCJoMiIsInAiLCJhIiwidGFyZ2V0IiwicmVsIiwib25DbGljayIsInNwYW4iLCJoMyIsIm1hcCIsInBvc3RlciIsImFydGljbGUiLCJpbWciLCJzcmMiLCJhbHQiLCJsb2FkaW5nIiwiZGVjb2Rp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

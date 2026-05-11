@@ -1,0 +1,207 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/landing/AfterWhatsapp.tsx");import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;
+
+let prevRefreshReg;
+let prevRefreshSig;
+
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react-swc can't detect preamble. Something is wrong."
+    );
+  }
+
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=c94b15b7"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import { ClipboardCheck, MessageCircle, Route, ShieldCheck } from "/node_modules/.vite/deps/lucide-react.js?v=c94b15b7";
+const steps = [
+    {
+        icon: MessageCircle,
+        title: "Ceritakan kondisi",
+        desc: "Kamu kirim posisi skripsi, revisi dosen, deadline, dan bagian yang paling bikin stuck."
+    },
+    {
+        icon: ClipboardCheck,
+        title: "Kami baca hambatannya",
+        desc: "Mentor bantu petakan masalah utama: struktur, metode, revisi, atau ritme progress."
+    },
+    {
+        icon: Route,
+        title: "Dapat langkah pertama",
+        desc: "Kamu mendapat arahan awal yang masuk akal sebelum memutuskan lanjut ke paket."
+    }
+];
+export const AfterWhatsapp = ()=>/*#__PURE__*/ _jsxDEV("section", {
+        className: "section-shell bg-background",
+        children: /*#__PURE__*/ _jsxDEV("div", {
+            className: "container",
+            children: /*#__PURE__*/ _jsxDEV("div", {
+                className: "grid gap-8 rounded-2xl border border-border bg-soft p-5 shadow-card sm:p-7 lg:grid-cols-[0.85fr_1.15fr] lg:items-center",
+                children: [
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        children: [
+                            /*#__PURE__*/ _jsxDEV("p", {
+                                className: "section-eyebrow",
+                                children: "Setelah klik WhatsApp"
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                lineNumber: 26,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("h2", {
+                                className: "mt-3 text-[2rem] font-extrabold leading-tight tracking-tight sm:text-4xl",
+                                children: "Tidak langsung dijualin paket. Kita mulai dari memahami kondisimu."
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                lineNumber: 27,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("p", {
+                                className: "mt-4 text-[15px] font-medium leading-7 text-foreground/75 md:text-lg md:leading-8",
+                                children: "Konsultasi awal dibuat ringan dan aman. Tujuannya memastikan kamu tahu langkah pertama, lalu baru menentukan apakah butuh pendampingan intensif."
+                            }, void 0, false, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                lineNumber: 30,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "mt-5 inline-flex items-start gap-2 rounded-2xl bg-white px-4 py-3 text-xs font-bold leading-5 text-foreground/76 ring-1 ring-border",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV(ShieldCheck, {
+                                        className: "h-4 w-4 shrink-0 text-gold"
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Private, tidak mengikat, dan tetap etis. Kami tidak mengambil alih pengerjaan skripsimu."
+                                ]
+                            }, void 0, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        className: "grid gap-3 md:grid-cols-3 lg:grid-cols-1",
+                        children: steps.map(({ icon: Icon, title, desc }, index)=>/*#__PURE__*/ _jsxDEV("div", {
+                                className: "rounded-2xl border border-border bg-white p-4 shadow-soft sm:p-5",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "flex items-center gap-3",
+                                        children: [
+                                            /*#__PURE__*/ _jsxDEV("span", {
+                                                className: "grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary-deep text-gold",
+                                                children: /*#__PURE__*/ _jsxDEV(Icon, {
+                                                    className: "h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                                    lineNumber: 46,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                                lineNumber: 45,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("p", {
+                                                        className: "text-xs font-extrabold uppercase tracking-[0.14em] text-[hsl(40_72%_38%)]",
+                                                        children: [
+                                                            "Step ",
+                                                            index + 1
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                                        lineNumber: 49,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("h3", {
+                                                        className: "mt-1 font-extrabold leading-tight",
+                                                        children: title
+                                                    }, void 0, false, {
+                                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                                        lineNumber: 52,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("p", {
+                                        className: "mt-3 text-sm font-medium leading-7 text-foreground/72",
+                                        children: desc
+                                    }, void 0, false, {
+                                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, title, true, {
+                                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this)
+        }, void 0, false, {
+            fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+            lineNumber: 23,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx",
+        lineNumber: 22,
+        columnNumber: 3
+    }, this);
+_c = AfterWhatsapp;
+var _c;
+$RefreshReg$(_c, "AfterWhatsapp");
+
+
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/carir/Documents/GitHub/bimbinganyuk-main/bimbinganyuk-main/src/components/landing/AfterWhatsapp.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFmdGVyV2hhdHNhcHAudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENsaXBib2FyZENoZWNrLCBNZXNzYWdlQ2lyY2xlLCBSb3V0ZSwgU2hpZWxkQ2hlY2sgfSBmcm9tIFwibHVjaWRlLXJlYWN0XCI7XG5cbmNvbnN0IHN0ZXBzID0gW1xuICB7XG4gICAgaWNvbjogTWVzc2FnZUNpcmNsZSxcbiAgICB0aXRsZTogXCJDZXJpdGFrYW4ga29uZGlzaVwiLFxuICAgIGRlc2M6IFwiS2FtdSBraXJpbSBwb3Npc2kgc2tyaXBzaSwgcmV2aXNpIGRvc2VuLCBkZWFkbGluZSwgZGFuIGJhZ2lhbiB5YW5nIHBhbGluZyBiaWtpbiBzdHVjay5cIixcbiAgfSxcbiAge1xuICAgIGljb246IENsaXBib2FyZENoZWNrLFxuICAgIHRpdGxlOiBcIkthbWkgYmFjYSBoYW1iYXRhbm55YVwiLFxuICAgIGRlc2M6IFwiTWVudG9yIGJhbnR1IHBldGFrYW4gbWFzYWxhaCB1dGFtYTogc3RydWt0dXIsIG1ldG9kZSwgcmV2aXNpLCBhdGF1IHJpdG1lIHByb2dyZXNzLlwiLFxuICB9LFxuICB7XG4gICAgaWNvbjogUm91dGUsXG4gICAgdGl0bGU6IFwiRGFwYXQgbGFuZ2thaCBwZXJ0YW1hXCIsXG4gICAgZGVzYzogXCJLYW11IG1lbmRhcGF0IGFyYWhhbiBhd2FsIHlhbmcgbWFzdWsgYWthbCBzZWJlbHVtIG1lbXV0dXNrYW4gbGFuanV0IGtlIHBha2V0LlwiLFxuICB9LFxuXTtcblxuZXhwb3J0IGNvbnN0IEFmdGVyV2hhdHNhcHAgPSAoKSA9PiAoXG4gIDxzZWN0aW9uIGNsYXNzTmFtZT1cInNlY3Rpb24tc2hlbGwgYmctYmFja2dyb3VuZFwiPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTggcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctc29mdCBwLTUgc2hhZG93LWNhcmQgc206cC03IGxnOmdyaWQtY29scy1bMC44NWZyXzEuMTVmcl0gbGc6aXRlbXMtY2VudGVyXCI+XG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwic2VjdGlvbi1leWVicm93XCI+U2V0ZWxhaCBrbGlrIFdoYXRzQXBwPC9wPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJtdC0zIHRleHQtWzJyZW1dIGZvbnQtZXh0cmFib2xkIGxlYWRpbmctdGlnaHQgdHJhY2tpbmctdGlnaHQgc206dGV4dC00eGxcIj5cbiAgICAgICAgICAgIFRpZGFrIGxhbmdzdW5nIGRpanVhbGluIHBha2V0LiBLaXRhIG11bGFpIGRhcmkgbWVtYWhhbWkga29uZGlzaW11LlxuICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtNCB0ZXh0LVsxNXB4XSBmb250LW1lZGl1bSBsZWFkaW5nLTcgdGV4dC1mb3JlZ3JvdW5kLzc1IG1kOnRleHQtbGcgbWQ6bGVhZGluZy04XCI+XG4gICAgICAgICAgICBLb25zdWx0YXNpIGF3YWwgZGlidWF0IHJpbmdhbiBkYW4gYW1hbi4gVHVqdWFubnlhIG1lbWFzdGlrYW4ga2FtdVxuICAgICAgICAgICAgdGFodSBsYW5na2FoIHBlcnRhbWEsIGxhbHUgYmFydSBtZW5lbnR1a2FuIGFwYWthaCBidXR1aCBwZW5kYW1waW5nYW5cbiAgICAgICAgICAgIGludGVuc2lmLlxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTUgaW5saW5lLWZsZXggaXRlbXMtc3RhcnQgZ2FwLTIgcm91bmRlZC0yeGwgYmctd2hpdGUgcHgtNCBweS0zIHRleHQteHMgZm9udC1ib2xkIGxlYWRpbmctNSB0ZXh0LWZvcmVncm91bmQvNzYgcmluZy0xIHJpbmctYm9yZGVyXCI+XG4gICAgICAgICAgICA8U2hpZWxkQ2hlY2sgY2xhc3NOYW1lPVwiaC00IHctNCBzaHJpbmstMCB0ZXh0LWdvbGRcIiAvPlxuICAgICAgICAgICAgUHJpdmF0ZSwgdGlkYWsgbWVuZ2lrYXQsIGRhbiB0ZXRhcCBldGlzLiBLYW1pIHRpZGFrIG1lbmdhbWJpbCBhbGloIHBlbmdlcmphYW4gc2tyaXBzaW11LlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTMgbWQ6Z3JpZC1jb2xzLTMgbGc6Z3JpZC1jb2xzLTFcIj5cbiAgICAgICAgICB7c3RlcHMubWFwKCh7IGljb246IEljb24sIHRpdGxlLCBkZXNjIH0sIGluZGV4KSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGtleT17dGl0bGV9IGNsYXNzTmFtZT1cInJvdW5kZWQtMnhsIGJvcmRlciBib3JkZXItYm9yZGVyIGJnLXdoaXRlIHAtNCBzaGFkb3ctc29mdCBzbTpwLTVcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtM1wiPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImdyaWQgaC0xMSB3LTExIHNocmluay0wIHBsYWNlLWl0ZW1zLWNlbnRlciByb3VuZGVkLTJ4bCBiZy1wcmltYXJ5LWRlZXAgdGV4dC1nb2xkXCI+XG4gICAgICAgICAgICAgICAgICA8SWNvbiBjbGFzc05hbWU9XCJoLTUgdy01XCIgLz5cbiAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgZm9udC1leHRyYWJvbGQgdXBwZXJjYXNlIHRyYWNraW5nLVswLjE0ZW1dIHRleHQtW2hzbCg0MF83MiVfMzglKV1cIj5cbiAgICAgICAgICAgICAgICAgICAgU3RlcCB7aW5kZXggKyAxfVxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTEgZm9udC1leHRyYWJvbGQgbGVhZGluZy10aWdodFwiPnt0aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMyB0ZXh0LXNtIGZvbnQtbWVkaXVtIGxlYWRpbmctNyB0ZXh0LWZvcmVncm91bmQvNzJcIj57ZGVzY308L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgPC9zZWN0aW9uPlxuKTtcbiJdLCJuYW1lcyI6WyJDbGlwYm9hcmRDaGVjayIsIk1lc3NhZ2VDaXJjbGUiLCJSb3V0ZSIsIlNoaWVsZENoZWNrIiwic3RlcHMiLCJpY29uIiwidGl0bGUiLCJkZXNjIiwiQWZ0ZXJXaGF0c2FwcCIsInNlY3Rpb24iLCJjbGFzc05hbWUiLCJkaXYiLCJwIiwiaDIiLCJtYXAiLCJJY29uIiwiaW5kZXgiLCJzcGFuIiwiaDMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsU0FBU0EsY0FBYyxFQUFFQyxhQUFhLEVBQUVDLEtBQUssRUFBRUMsV0FBVyxRQUFRLGVBQWU7QUFFakYsTUFBTUMsUUFBUTtJQUNaO1FBQ0VDLE1BQU1KO1FBQ05LLE9BQU87UUFDUEMsTUFBTTtJQUNSO0lBQ0E7UUFDRUYsTUFBTUw7UUFDTk0sT0FBTztRQUNQQyxNQUFNO0lBQ1I7SUFDQTtRQUNFRixNQUFNSDtRQUNOSSxPQUFPO1FBQ1BDLE1BQU07SUFDUjtDQUNEO0FBRUQsT0FBTyxNQUFNQyxnQkFBZ0Isa0JBQzNCLFFBQUNDO1FBQVFDLFdBQVU7a0JBQ2pCLGNBQUEsUUFBQ0M7WUFBSUQsV0FBVTtzQkFDYixjQUFBLFFBQUNDO2dCQUFJRCxXQUFVOztrQ0FDYixRQUFDQzs7MENBQ0MsUUFBQ0M7Z0NBQUVGLFdBQVU7MENBQWtCOzs7Ozs7MENBQy9CLFFBQUNHO2dDQUFHSCxXQUFVOzBDQUEyRTs7Ozs7OzBDQUd6RixRQUFDRTtnQ0FBRUYsV0FBVTswQ0FBb0Y7Ozs7OzswQ0FLakcsUUFBQ0M7Z0NBQUlELFdBQVU7O2tEQUNiLFFBQUNQO3dDQUFZTyxXQUFVOzs7Ozs7b0NBQStCOzs7Ozs7Ozs7Ozs7O2tDQUsxRCxRQUFDQzt3QkFBSUQsV0FBVTtrQ0FDWk4sTUFBTVUsR0FBRyxDQUFDLENBQUMsRUFBRVQsTUFBTVUsSUFBSSxFQUFFVCxLQUFLLEVBQUVDLElBQUksRUFBRSxFQUFFUyxzQkFDdkMsUUFBQ0w7Z0NBQWdCRCxXQUFVOztrREFDekIsUUFBQ0M7d0NBQUlELFdBQVU7OzBEQUNiLFFBQUNPO2dEQUFLUCxXQUFVOzBEQUNkLGNBQUEsUUFBQ0s7b0RBQUtMLFdBQVU7Ozs7Ozs7Ozs7OzBEQUVsQixRQUFDQzs7a0VBQ0MsUUFBQ0M7d0RBQUVGLFdBQVU7OzREQUE0RTs0REFDakZNLFFBQVE7Ozs7Ozs7a0VBRWhCLFFBQUNFO3dEQUFHUixXQUFVO2tFQUFxQ0o7Ozs7Ozs7Ozs7Ozs7Ozs7OztrREFHdkQsUUFBQ007d0NBQUVGLFdBQVU7a0RBQXlESDs7Ozs7OzsrQkFaOUREOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O2FBbUJwQjtLQXpDV0UifQ==
