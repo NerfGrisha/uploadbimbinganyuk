@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg-optimized.jpg";
 import heroBgMobile from "@/assets/hero-bg-mobile-optimized.jpg";
-import { trackCtaClick } from "@/lib/analytics";
+import { trackButtonClick } from "@/lib/analytics";
 import { whatsappMessages, whatsappUrl } from "@/lib/whatsapp";
 
 const WA_URL = whatsappUrl(whatsappMessages.hero);
@@ -77,7 +77,7 @@ export const Hero = () => (
               href={WA_URL}
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackCtaClick("Cek Kondisi Skripsi Gratis", "hero")}
+              onClick={() => trackButtonClick("whatsapp_hero_click", "Cek Kondisi Skripsi Gratis", "hero")}
               className="premium-button group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gold px-5 py-4 text-center text-sm font-extrabold text-primary-deep shadow-[0_18px_50px_-18px_hsl(40_75%_55%/.8)] ring-1 ring-gold/70 transition hover:brightness-110 sm:w-auto sm:px-6"
             >
               <MessageCircle className="h-5 w-5" />
@@ -86,7 +86,7 @@ export const Hero = () => (
             </a>
             <a
               href="#paket"
-              onClick={() => trackCtaClick("Lihat Program", "hero")}
+              onClick={() => trackButtonClick("hero_program_click", "Lihat Program", "hero")}
               className="premium-button inline-flex w-full items-center justify-center rounded-2xl border border-white/24 bg-white/10 px-5 py-4 text-sm font-bold text-white backdrop-blur transition hover:border-gold/50 hover:bg-white/14 sm:w-auto sm:px-6"
             >
               Lihat Program

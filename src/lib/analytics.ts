@@ -4,9 +4,17 @@ declare global {
   }
 }
 
-export const trackCtaClick = (label: string, location: string) => {
-  window.gtag?.("event", "cta_click", {
-    event_category: "engagement",
+export const trackButtonClick = (eventName: string, label: string, location: string) => {
+  window.gtag?.("event", eventName, {
+    event_category: "button",
+    event_label: label,
+    location,
+  });
+};
+
+export const trackNavClick = (eventName: string, label: string, location: string) => {
+  window.gtag?.("event", eventName, {
+    event_category: "navigation",
     event_label: label,
     location,
   });

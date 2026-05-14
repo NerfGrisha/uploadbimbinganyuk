@@ -1,6 +1,6 @@
 import { Globe, Instagram, Mail, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
 import logo from "@/assets/logo-bimbinganyuk-optimized.png";
-import { trackCtaClick } from "@/lib/analytics";
+import { trackButtonClick } from "@/lib/analytics";
 import { whatsappMessages, whatsappUrl } from "@/lib/whatsapp";
 
 const WA = whatsappUrl(whatsappMessages.footer);
@@ -31,7 +31,7 @@ export const CtaFooter = () => (
               href={WA}
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackCtaClick("Cek Kondisi Skripsi Gratis", "footer_cta_section")}
+              onClick={() => trackButtonClick("whatsapp_footer_cta_click", "Cek Kondisi Skripsi Gratis", "footer_cta_section")}
               className="premium-button inline-flex items-center justify-center gap-2 rounded-2xl bg-gold px-6 py-4 text-center text-sm font-extrabold text-primary-deep shadow-2xl transition hover:brightness-110 sm:px-7 sm:text-base"
             >
               <MessageCircle className="h-5 w-5" />
@@ -39,7 +39,7 @@ export const CtaFooter = () => (
             </a>
             <a
               href="#paket"
-              onClick={() => trackCtaClick("Lihat Opsi Paket", "footer_cta_section")}
+              onClick={() => trackButtonClick("footer_package_click", "Lihat Opsi Paket", "footer_cta_section")}
               className="premium-button inline-flex items-center justify-center rounded-2xl border border-white/24 bg-white/10 px-6 py-4 text-center text-sm font-bold text-white transition hover:border-gold/50 hover:bg-white/14 sm:px-7 sm:text-base"
             >
               Lihat Opsi Paket
@@ -88,27 +88,27 @@ export const CtaFooter = () => (
           <h4 className="mb-3 font-semibold text-white">Hubungi Kami</h4>
           <ul className="space-y-2 text-xs text-white/90">
             <li>
-              <a href="mailto:hello@bimbinganyuk.id" className="flex items-center gap-2 hover:text-gold">
+              <a href="mailto:hello@bimbinganyuk.id" onClick={() => trackButtonClick("footer_email_click", "Email Footer", "footer_contact")} className="flex items-center gap-2 hover:text-gold">
                 <Mail className="h-3.5 w-3.5 text-gold" /> hello@bimbinganyuk.id
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/bimbinganyuk.id" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-gold">
+              <a href="https://instagram.com/bimbinganyuk.id" target="_blank" rel="noreferrer" onClick={() => trackButtonClick("footer_instagram_click", "Instagram Footer", "footer_contact")} className="flex items-center gap-2 hover:text-gold">
                 <Instagram className="h-3.5 w-3.5 text-gold" /> @bimbinganyuk.id
               </a>
             </li>
             <li>
-              <a href="https://bimbinganyuk.skillupkids.id/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-gold">
+              <a href="https://bimbinganyuk.skillupkids.id/" target="_blank" rel="noreferrer" onClick={() => trackButtonClick("footer_website_click", "Website Footer", "footer_contact")} className="flex items-center gap-2 hover:text-gold">
                 <Globe className="h-3.5 w-3.5 text-gold" /> bimbinganyuk.skillupkids.id
               </a>
             </li>
             <li>
-              <a href={WA} target="_blank" rel="noreferrer" onClick={() => trackCtaClick("Nomor WhatsApp Footer", "footer_contact")} className="flex items-center gap-2 hover:text-gold">
+              <a href={WA} target="_blank" rel="noreferrer" onClick={() => trackButtonClick("whatsapp_footer_contact_click", "Nomor WhatsApp Footer", "footer_contact")} className="flex items-center gap-2 hover:text-gold">
                 <MessageCircle className="h-3.5 w-3.5 text-gold" /> 0851-5875-8688
               </a>
             </li>
             <li>
-              <a href={MAPS_URL} target="_blank" rel="noreferrer" className="flex items-start gap-2 leading-relaxed hover:text-gold">
+              <a href={MAPS_URL} target="_blank" rel="noreferrer" onClick={() => trackButtonClick("footer_maps_click", "Maps Footer", "footer_contact")} className="flex items-start gap-2 leading-relaxed hover:text-gold">
                 <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" />
                 <span>Basement Unit 5. Graha Universitas Amikom Yogyakarta, Jl. Ring Road Utara, Ngringin, Condong Catur, Depok, Sleman Regency, Special Region of Yogyakarta 55283.</span>
               </a>
@@ -121,6 +121,7 @@ export const CtaFooter = () => (
             href="https://skillupkids.id/"
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackButtonClick("footer_skillupkids_click", "SkillUpKids Footer", "footer_powered_by")}
             className="premium-button inline-flex rounded-lg bg-white px-3 py-2 text-xs font-bold text-primary-deep hover:bg-gold"
           >
             SkillUpKids
@@ -137,7 +138,7 @@ export const CtaFooter = () => (
         href={FLOATING_WA}
         target="_blank"
         rel="noreferrer"
-        onClick={() => trackCtaClick("Cek Skripsi Gratis", "floating_cta")}
+        onClick={() => trackButtonClick("whatsapp_floating_click", "Cek Skripsi Gratis", "floating_cta")}
         className="premium-button fixed bottom-4 left-4 right-4 z-50 inline-flex items-center justify-center gap-2 rounded-2xl bg-gold px-5 py-4 text-sm font-extrabold text-primary-deep shadow-2xl ring-1 ring-gold/70 transition hover:brightness-110 md:left-auto md:right-6 md:w-auto"
       >
         <MessageCircle className="h-5 w-5" />

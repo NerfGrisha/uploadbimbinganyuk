@@ -1,5 +1,5 @@
 import { Check, Crown, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
-import { trackCtaClick } from "@/lib/analytics";
+import { trackButtonClick } from "@/lib/analytics";
 import { whatsappMessages, whatsappUrl } from "@/lib/whatsapp";
 
 const WA = (paket: string) => whatsappUrl(whatsappMessages.package(paket));
@@ -7,6 +7,7 @@ const WA = (paket: string) => whatsappUrl(whatsappMessages.package(paket));
 const packages = [
   {
     name: "Starter Direction",
+    eventName: "whatsapp_package_starter_click",
     fit: "Untuk kamu yang bingung mulai dari mana dan butuh arah kerja pertama.",
     price: "Rp3.500.000",
     note: "Mulai dari",
@@ -17,6 +18,7 @@ const packages = [
   },
   {
     name: "Fast Track Progress",
+    eventName: "whatsapp_package_fast_track_click",
     fit: "Untuk kamu yang sudah punya naskah/revisi dan ingin progress cepat.",
     price: "Rp7.500.000",
     note: "Paling direkomendasikan",
@@ -27,6 +29,7 @@ const packages = [
   },
   {
     name: "VIP Wisuda 90 Hari",
+    eventName: "whatsapp_package_vip_click",
     fit: "Untuk kamu yang butuh pendampingan intensif sampai siap sidang.",
     price: "Rp15.000.000",
     note: "Pendampingan premium",
@@ -132,7 +135,7 @@ export const Packages = () => (
               href={WA(p.name)}
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackCtaClick(`Paket ${p.name}`, "packages_card")}
+              onClick={() => trackButtonClick(p.eventName, `Paket ${p.name}`, "packages_card")}
               className={`premium-button mt-8 inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-4 text-center text-sm font-extrabold transition ${
                 p.popular
                   ? "bg-gold text-primary-deep hover:brightness-110"

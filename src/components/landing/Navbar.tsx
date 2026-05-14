@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Menu, MessageCircle, X } from "lucide-react";
 import logo from "@/assets/logo-bimbinganyuk-optimized.png";
-import { trackCtaClick } from "@/lib/analytics";
+import { trackButtonClick, trackNavClick } from "@/lib/analytics";
 import { whatsappMessages, whatsappUrl } from "@/lib/whatsapp";
 
 const links = [
-  { href: "#program", label: "Program" },
-  { href: "#paket", label: "Paket" },
-  { href: "#affiliate", label: "Affiliate" },
-  { href: "#tentang", label: "Mentor" },
-  { href: "#testimoni", label: "Testimoni" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#program", label: "Program", eventName: "nav_program_click" },
+  { href: "#paket", label: "Paket", eventName: "nav_paket_click" },
+  { href: "#affiliate", label: "Affiliate", eventName: "nav_affiliate_click" },
+  { href: "#tentang", label: "Mentor", eventName: "nav_mentor_click" },
+  { href: "#testimoni", label: "Testimoni", eventName: "nav_testimoni_click" },
+  { href: "#faq", label: "FAQ", eventName: "nav_faq_click" },
 ];
 
 const WA_URL = whatsappUrl(whatsappMessages.nav);
@@ -68,7 +68,11 @@ export const Navbar = () => {
         <ul className="hidden items-center gap-7 rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm font-semibold text-white/90 backdrop-blur lg:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="transition hover:text-gold">
+              <a
+                href={l.href}
+                onClick={() => trackNavClick(l.eventName, l.label, "navbar_desktop")}
+                className="transition hover:text-gold"
+              >
                 {l.label}
               </a>
             </li>
@@ -80,7 +84,7 @@ export const Navbar = () => {
             href={WA_URL}
             target="_blank"
             rel="noreferrer"
-            onClick={() => trackCtaClick("Cek Skripsi Gratis", "navbar_desktop")}
+            onClick={() => trackButtonClick("whatsapp_navbar_desktop_click", "Cek Skripsi Gratis", "navbar_desktop")}
             className="premium-button hidden items-center gap-2 rounded-xl bg-gold px-5 py-3 text-sm font-extrabold text-primary-deep shadow-[0_12px_30px_-18px_hsl(40_75%_55%/.9)] transition hover:brightness-110 md:inline-flex"
           >
             <MessageCircle className="h-4 w-4" />
@@ -130,7 +134,10 @@ export const Navbar = () => {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    trackNavClick(l.eventName, l.label, "navbar_mobile");
+                    setOpen(false);
+                  }}
                   className="flex min-h-12 items-center justify-between rounded-2xl bg-white/[0.075] px-4 py-3 text-white shadow-sm ring-1 ring-white/10 transition hover:bg-white/[0.13] hover:text-gold"
                 >
                   <span>{l.label}</span>
@@ -145,7 +152,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noreferrer"
             onClick={() => {
-              trackCtaClick("Cek Skripsi Gratis", "navbar_mobile");
+              trackButtonClick("whatsapp_navbar_mobile_click", "Cek Skripsi Gratis", "navbar_mobile");
               setOpen(false);
             }}
             className="premium-button mt-3 flex items-center justify-center gap-2 rounded-2xl bg-gold px-5 py-4 text-sm font-extrabold text-primary-deep shadow-[0_20px_50px_-20px_hsl(40_75%_55%/.9)]"

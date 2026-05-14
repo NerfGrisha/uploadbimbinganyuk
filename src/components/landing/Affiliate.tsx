@@ -1,5 +1,5 @@
 import { ArrowRight, BadgePercent, Download, HandCoins, MessageCircle, Share2, ShieldCheck, Sparkles, UsersRound } from "lucide-react";
-import { trackCtaClick } from "@/lib/analytics";
+import { trackButtonClick } from "@/lib/analytics";
 import { whatsappMessages, whatsappUrl } from "@/lib/whatsapp";
 
 const affiliateUrl = whatsappUrl(whatsappMessages.affiliate);
@@ -31,6 +31,7 @@ const examples = [
 const promoPosters = [
   {
     title: "Poster Utama",
+    eventName: "affiliate_download_main_poster_click",
     desc: "Materi promosi BimbinganYuk untuk edukasi calon referral.",
     href: "/Poster BimbinganYuk.png",
     previewSrc: "/Poster BimbinganYuk-preview.jpg",
@@ -38,6 +39,7 @@ const promoPosters = [
   },
   {
     title: "Poster Affiliate",
+    eventName: "affiliate_download_affiliate_poster_click",
     desc: "Materi khusus affiliator dengan info komisi dan ajakan daftar.",
     href: "/Poster Affiliate Bimbinganyuk.png",
     previewSrc: "/Poster Affiliate Bimbinganyuk-preview.jpg",
@@ -67,7 +69,7 @@ export const Affiliate = () => (
               href={affiliateUrl}
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackCtaClick("Daftar Affiliate", "affiliate_section")}
+              onClick={() => trackButtonClick("affiliate_register_whatsapp_click", "Daftar Affiliate", "affiliate_section")}
               className="premium-button inline-flex items-center justify-center gap-2 rounded-2xl bg-gold px-6 py-4 text-sm font-extrabold text-primary-deep shadow-2xl hover:brightness-110"
             >
               <MessageCircle className="h-5 w-5" />
@@ -76,7 +78,7 @@ export const Affiliate = () => (
             </a>
             <a
               href="#paket"
-              onClick={() => trackCtaClick("Lihat Potensi Komisi", "affiliate_section")}
+              onClick={() => trackButtonClick("affiliate_package_click", "Lihat Potensi Komisi", "affiliate_section")}
               className="premium-button inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-6 py-4 text-sm font-bold text-white hover:bg-white/14"
             >
               Lihat Paket
@@ -118,7 +120,7 @@ export const Affiliate = () => (
                     <a
                       href={poster.href}
                       download={poster.fileName}
-                      onClick={() => trackCtaClick(`Download ${poster.title}`, "affiliate_promo_kit")}
+                      onClick={() => trackButtonClick(poster.eventName, `Download ${poster.title}`, "affiliate_promo_kit")}
                       className="premium-button mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gold px-4 py-3 text-sm font-extrabold text-primary-deep shadow-lg hover:brightness-110"
                     >
                       <Download className="h-4 w-4" />

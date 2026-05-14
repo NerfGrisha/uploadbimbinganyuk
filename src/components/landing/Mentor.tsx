@@ -1,5 +1,6 @@
 import { Award, Check, ExternalLink, Instagram, Linkedin, Quote, ShieldCheck, Trophy } from "lucide-react";
 import mentorImg from "@/assets/mentor-rachmat-optimized.jpg";
+import { trackButtonClick } from "@/lib/analytics";
 
 const points = [
   "Mahasiswa terbaik program studi",
@@ -19,16 +20,19 @@ const stats = [
 const mentorLinks = [
   {
     label: "Profil",
+    eventName: "mentor_profile_click",
     href: "https://rachmat.cyberai.id/",
     icon: ExternalLink,
   },
   {
     label: "Instagram",
+    eventName: "mentor_instagram_click",
     href: "https://www.instagram.com/cari.rachmat",
     icon: Instagram,
   },
   {
     label: "LinkedIn",
+    eventName: "mentor_linkedin_click",
     href: "https://www.linkedin.com/in/carirachmat/",
     icon: Linkedin,
   },
@@ -57,12 +61,13 @@ export const Mentor = () => (
               <h3 className="mt-2 text-xl font-extrabold sm:text-2xl">Rachmat Fachrurrozi, S.Kom</h3>
               <p className="mt-1 text-sm text-white/80">Founder BimbinganYuk</p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {mentorLinks.map(({ label, href, icon: Icon }) => (
+                {mentorLinks.map(({ label, href, eventName, icon: Icon }) => (
                   <a
                     key={label}
                     href={href}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => trackButtonClick(eventName, `Mentor ${label}`, "mentor_profile")}
                     className="premium-button inline-flex items-center gap-1.5 rounded-full border border-white/14 bg-white/12 px-3 py-2 text-xs font-extrabold text-white backdrop-blur transition hover:border-gold/50 hover:bg-gold hover:text-primary-deep"
                   >
                     <Icon className="h-3.5 w-3.5" />

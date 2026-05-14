@@ -9,6 +9,7 @@ import {
   Search,
 } from "lucide-react";
 import gradImg from "@/assets/graduation-optimized.jpg";
+import { trackButtonClick } from "@/lib/analytics";
 
 const steps = [
   {
@@ -118,6 +119,7 @@ export const Program = () => (
           </div>
           <a
             href="#paket"
+            onClick={() => trackButtonClick("program_compare_package_click", "Bandingkan Paket", "program_section")}
             className="premium-button inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-primary-deep px-5 py-3 text-sm font-bold text-white transition hover:bg-primary sm:w-auto"
           >
             Bandingkan Paket
